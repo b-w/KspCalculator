@@ -1,8 +1,8 @@
-﻿namespace KspMath.TWR
+﻿namespace KspMath.DV
 {
     using System.Collections.Generic;
 
-    public class TwrParameters
+    public class DvParameters
     {
         /// <summary>
         /// The engine configuration.
@@ -10,9 +10,14 @@
         public ICollection<EngineConfiguration> @EngineConfiguration { get; set; }
 
         /// <summary>
-        /// The mass (in t) of the rocket.
+        /// The total mass (in t) of the rocket.
         /// </summary>
-        public double RocketMass { get; set; }
+        public double RocketMassTotal { get; set; }
+
+        /// <summary>
+        /// The dry mass (in t) of the rocket.
+        /// </summary>
+        public double RocketMassDry { get; set; }
 
         /// <summary>
         /// The gravity constant (in m/s^2).

@@ -1,10 +1,10 @@
-﻿namespace KspMath.Tests.TWR
+﻿namespace KspMath.Tests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using KspMath.TWR;
+    using KspMath;
 
     [TestClass]
-    public class TwrEngineConfigurationTests
+    public class EngineConfigurationTests
     {
         const double DOUBLE_DELTA = 0.00001;
 
@@ -13,7 +13,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 1,
@@ -34,7 +34,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 3,
@@ -55,7 +55,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 0,
@@ -76,7 +76,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 1,
@@ -97,7 +97,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 1,
@@ -118,7 +118,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 1,
@@ -139,7 +139,7 @@
         {
             // arrange
 
-            var config = new TwrEngineConfiguration()
+            var config = new EngineConfiguration()
             {
                 EngineTrust = 220,
                 EngineCount = 1,

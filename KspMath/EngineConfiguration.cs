@@ -1,8 +1,8 @@
-﻿namespace KspMath.TWR
+﻿namespace KspMath
 {
     using System;
 
-    public class TwrEngineConfiguration
+    public class EngineConfiguration
     {
         /// <summary>
         /// Trust (in kN) for a single engine in the configuration.
@@ -18,6 +18,11 @@
         /// Angle (in degrees) for the engines in the configuration.
         /// </summary>
         public double EngineAngle { get; set; }
+
+        /// <summary>
+        /// Specific impulse (in s) of the engines in the configuration.
+        /// </summary>
+        public double EngineSpecificImpulse { get; set; }
 
         /// <summary>
         /// Computes the total amount of effective trust (in kN) for the configuration.

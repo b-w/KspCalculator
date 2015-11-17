@@ -52,8 +52,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DV\DvComputationTests.cs" />
+    <Compile Include="ISP\IspComputationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TWR\TwrEngineConfigurationTests.cs" />
+    <Compile Include="TWR\TwrComputationTests.cs" />
+    <Compile Include="EngineConfigurationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KspMath\KspMath.csproj">
@@ -61,6 +64,7 @@
       <Name>KspMath</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
