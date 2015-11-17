@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KspMath", "KspMath\KspMath.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KspCalculator", "KspCalculator\KspCalculator.csproj", "{D16B02C5-32A6-4E28-9996-7711174CF0F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KspMath.Tests", "KspMath.Tests\KspMath.Tests.csproj", "{F55B4FB9-EB89-46CF-BA2D-2EADFF9B46EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D16B02C5-32A6-4E28-9996-7711174CF0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D16B02C5-32A6-4E28-9996-7711174CF0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D16B02C5-32A6-4E28-9996-7711174CF0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55B4FB9-EB89-46CF-BA2D-2EADFF9B46EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55B4FB9-EB89-46CF-BA2D-2EADFF9B46EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55B4FB9-EB89-46CF-BA2D-2EADFF9B46EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55B4FB9-EB89-46CF-BA2D-2EADFF9B46EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
