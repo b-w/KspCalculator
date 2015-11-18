@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="KspCalculator.Views.EngineConfigurationGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KspCalculator.Views"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    <DockPanel>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+            <DataGrid Name="gridEngineConfig" AutoGenerateColumns="False" CanUserReorderColumns="True" CanUserResizeRows="False" DataContext="{Binding}" ItemsSource="{Binding}">
+                <DataGrid.Resources>
+                    <sys:String x:Key="preset">Preset</sys:String>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="200" />
+                    <DataGridTextColumn Binding="{Binding Path=EngineCount, ValidatesOnExceptions=True}" Header="# Engines" />
+                    <DataGridTextColumn Binding="{Binding Path=EngineTrust, ValidatesOnExceptions=True}" Header="Trust (kN)" />
+                    <DataGridTextColumn Binding="{Binding Path=EngineSpecificImpulse, ValidatesOnExceptions=True}" Header="Isp (s)" />
+                    <DataGridTextColumn Binding="{Binding Path=EngineAngle, ValidatesOnExceptions=True}" Header="Angle (deg)" />
+                    <DataGridTextColumn Binding="{Binding Path=TotalTrust, Mode=OneWay}" Header="Effective Trust (kN)" IsReadOnly="True" />
+                    <DataGridHyperlinkColumn ContentBinding="{Binding Source={StaticResource preset}}" CanUserResize="False" CanUserReorder="False" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>
