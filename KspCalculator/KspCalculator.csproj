@@ -53,10 +53,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\DvComputationModel.cs" />
     <Compile Include="Models\EngineConfigurationModel.cs" />
+    <Compile Include="Models\IspComputationModel.cs" />
+    <Compile Include="Models\PartConfigurationModel.cs" />
     <Compile Include="Models\TwrComputationModel.cs" />
+    <Compile Include="PresetPartWindow.xaml.cs">
+      <DependentUpon>PresetPartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presets\PresetConfiguration.cs" />
+    <Compile Include="Presets\PresetEngine.cs" />
+    <Compile Include="Presets\PresetPart.cs" />
+    <Compile Include="Presets\PresetReader.cs" />
+    <Compile Include="Views\DvComputationView.xaml.cs">
+      <DependentUpon>DvComputationView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EngineConfigurationGrid.xaml.cs">
       <DependentUpon>EngineConfigurationGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IspComputationView.xaml.cs">
+      <DependentUpon>IspComputationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartConfigurationGrid.xaml.cs">
+      <DependentUpon>PartConfigurationGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TwrComputationView.xaml.cs">
       <DependentUpon>TwrComputationView.xaml</DependentUpon>
@@ -73,7 +92,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PresetPartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DvComputationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\EngineConfigurationGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IspComputationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartConfigurationGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,6 +150,7 @@
       <Name>KspMath</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

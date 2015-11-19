@@ -6,11 +6,17 @@
         xmlns:local="clr-namespace:KspCalculator"
         xmlns:views="clr-namespace:KspCalculator.Views"
         mc:Ignorable="d"
-        Title="KSP Calculator" Height="350" Width="640">
+        Title="KSP Calculator" Height="480" Width="640">
     <DockPanel>
         <TabControl>
             <TabItem Header="Trust-to-Weight ratio">
                 <views:TwrComputationView x:Name="viewTwrComputation" />
+            </TabItem>
+            <TabItem Header="Combined Isp">
+                <views:IspComputationView x:Name="viewIspComputation" />
+            </TabItem>
+            <TabItem Header="Delta-V">
+                <views:DvComputationView x:Name="viewDvComputation" />
             </TabItem>
         </TabControl>
     </DockPanel>

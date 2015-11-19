@@ -4,14 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:KspCalculator.Views"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="400">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0 10 0 0">
-            <Label Content="Rocket mass (t):" Padding="20 5 5 5" />
-            <TextBox Width="60" Text="{Binding Path=RocketMass}" />
             <Label Content="Gravity (m/s^2):" Padding="20 5 5 5" />
             <TextBox Width="60" Text="{Binding Path=Gravity}" />
+            <Label Content="Rocket mass (t):" Padding="20 5 5 5" />
+            <TextBox Width="60" Text="{Binding Path=RocketMass}" />
         </StackPanel>
 
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="0 0 0 10">

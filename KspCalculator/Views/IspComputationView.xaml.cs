@@ -3,11 +3,11 @@
     using System.Windows.Controls;
 
     /// <summary>
-    /// Interaction logic for EngineConfigurationGrid.xaml
+    /// Interaction logic for IspComputationView.xaml
     /// </summary>
-    public partial class EngineConfigurationGrid : UserControl
+    public partial class IspComputationView : UserControl
     {
-        public EngineConfigurationGrid()
+        public IspComputationView()
         {
             InitializeComponent();
         }
