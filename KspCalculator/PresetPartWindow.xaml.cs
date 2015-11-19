@@ -1,25 +1,21 @@
 ﻿namespace KspCalculator
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Data;
-    using System.Windows.Documents;
     using System.Windows.Input;
-    using System.Windows.Media;
-    using System.Windows.Media.Imaging;
-    using System.Windows.Shapes;
     using KspCalculator.Presets;
+    using KspCalculator.Models;
 
     /// <summary>
     /// Interaction logic for PresetPartWindow.xaml
     /// </summary>
     public partial class PresetPartWindow : Window
     {
+        PresetSelectionModel<PresetPart> m_dataContext;
+
         public PresetPartWindow()
         {
             InitializeComponent();
@@ -31,20 +27,41 @@
         void InitializeDataContexts()
         {
             var presetConfig = PresetReader.GetPresets();
-            gridPresetPart.DataContext = presetConfig.Parts;
-            gridPresetPart.ItemsSource = presetConfig.Parts;
+
+            m_dataContext = new PresetSelectionModel<PresetPart>(presetConfig.Parts.OrderBy(x => x.Name));
+            DataContext = m_dataContext;
         }
 
-        void gridPresetPart_RowDoubleClick(object sender, MouseButtonEventArgs e)
+        void AcceptPart(PresetPart presetPart)
         {
-            var row = sender as DataGridRow;
-            var presetPart = row?.Item as PresetPart;
             if (presetPart != null)
             {
                 SelectedPart = presetPart;
                 DialogResult = true;
                 Close();
             }
+        }
+
+        void gridPresetPart_RowDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var row = sender as DataGridRow;
+            var presetPart = row?.Item as PresetPart;
+            AcceptPart(presetPart);
+        }
+
+        void SearchboxEnterCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            var view = m_dataContext.ItemView as ListCollectionView;
+            if (view.Count == 1)
+            {
+                var presetPart = view.CurrentItem as PresetPart;
+                AcceptPart(presetPart);
+            }
+        }
+
+        void SearchboxEnterCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = !String.IsNullOrWhiteSpace(txtFilter.Text);
         }
     }
 }

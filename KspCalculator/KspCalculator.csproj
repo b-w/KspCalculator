@@ -57,12 +57,14 @@
     <Compile Include="Models\EngineConfigurationModel.cs" />
     <Compile Include="Models\IspComputationModel.cs" />
     <Compile Include="Models\PartConfigurationModel.cs" />
+    <Compile Include="Models\PresetSelectionModel.cs" />
     <Compile Include="Models\TwrComputationModel.cs" />
     <Compile Include="PresetPartWindow.xaml.cs">
       <DependentUpon>PresetPartWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Presets\PresetConfiguration.cs" />
     <Compile Include="Presets\PresetEngine.cs" />
+    <Compile Include="Presets\PresetItem.cs" />
     <Compile Include="Presets\PresetPart.cs" />
     <Compile Include="Presets\PresetReader.cs" />
     <Compile Include="Views\DvComputationView.xaml.cs">

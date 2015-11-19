@@ -2,11 +2,8 @@
 {
     using System.Xml.Serialization;
 
-    public class PresetPart
+    public class PresetPart : PresetItem
     {
-        [XmlAttribute("Name")]
-        public string Name { get; set; }
-
         [XmlAttribute("MassTotal")]
         public double MassTotal { get; set; }
 
