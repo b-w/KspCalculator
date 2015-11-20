@@ -18,17 +18,34 @@
             }
         }
 
-        double m_massTotal;
-        public double MassTotal
+        int m_count;
+        public int Count
         {
             get
             {
-                return m_massTotal;
+                return m_count;
             }
             set
             {
-                m_massTotal = value;
-                OnPropertyChanged(nameof(MassTotal));
+                m_count = value;
+                OnPropertyChanged(nameof(Count));
+                OnPropertyChanged(nameof(TotalMass));
+                OnPropertyChanged(nameof(TotalMassDry));
+            }
+        }
+
+        double m_mass;
+        public double Mass
+        {
+            get
+            {
+                return m_mass;
+            }
+            set
+            {
+                m_mass = value;
+                OnPropertyChanged(nameof(Mass));
+                OnPropertyChanged(nameof(TotalMass));
             }
         }
 
@@ -43,6 +60,23 @@
             {
                 m_massDry = value;
                 OnPropertyChanged(nameof(MassDry));
+                OnPropertyChanged(nameof(TotalMassDry));
+            }
+        }
+
+        public double TotalMass
+        {
+            get
+            {
+                return m_mass * m_count;
+            }
+        }
+
+        public double TotalMassDry
+        {
+            get
+            {
+                return m_massDry * m_count;
             }
         }
 

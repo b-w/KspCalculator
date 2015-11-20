@@ -45,7 +45,7 @@
         {
             get
             {
-                return PartConfig.Sum(x => x.MassTotal);
+                return PartConfig.Sum(x => x.TotalMass);
             }
         }
 
@@ -53,7 +53,7 @@
         {
             get
             {
-                return PartConfig.Sum(x => x.MassDry);
+                return PartConfig.Sum(x => x.TotalMassDry);
             }
         }
 

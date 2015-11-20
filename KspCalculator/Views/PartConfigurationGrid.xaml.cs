@@ -30,7 +30,7 @@
                 {
                     var partModel = (PartConfigurationModel)part;
                     partModel.Name = presetWindow.SelectedPart.Name;
-                    partModel.MassTotal = presetWindow.SelectedPart.MassTotal;
+                    partModel.Mass = presetWindow.SelectedPart.MassTotal;
                     partModel.MassDry = presetWindow.SelectedPart.MassDry;
                 }
                 else
@@ -39,7 +39,8 @@
                     dataContext.Add(new PartConfigurationModel()
                     {
                         Name = presetWindow.SelectedPart.Name,
-                        MassTotal = presetWindow.SelectedPart.MassTotal,
+                        Count = 1,
+                        Mass = presetWindow.SelectedPart.MassTotal,
                         MassDry = presetWindow.SelectedPart.MassDry
                     });
                 }
