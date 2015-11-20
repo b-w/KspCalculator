@@ -2,11 +2,8 @@
 {
     using System.Xml.Serialization;
 
-    public class PresetEngine
+    public class PresetEngine : PresetItem
     {
-        [XmlAttribute("Name")]
-        public string Name { get; set; }
-
         [XmlAttribute("TrustVacc")]
         public double TrustVacc { get; set; }
 

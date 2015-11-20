@@ -20,7 +20,17 @@
                     <DataGridTextColumn Binding="{Binding Path=EngineSpecificImpulse, ValidatesOnExceptions=True}" Header="Isp (s)" />
                     <DataGridTextColumn Binding="{Binding Path=EngineAngle, ValidatesOnExceptions=True}" Header="Angle (deg)" />
                     <DataGridTextColumn Binding="{Binding Path=TotalTrust, Mode=OneWay}" Header="Effective Trust (kN)" IsReadOnly="True" />
-                    <DataGridHyperlinkColumn ContentBinding="{Binding Source={StaticResource preset}}" CanUserResize="False" CanUserReorder="False" />
+                    <DataGridTemplateColumn CanUserResize="False" CanUserSort="False">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Hyperlink Click="PresetLink_Click" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=DataContext}">
+                                        <TextBlock Text="{Binding Source={StaticResource preset}}" />
+                                    </Hyperlink>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </ScrollViewer>

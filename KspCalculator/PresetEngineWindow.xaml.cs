@@ -11,43 +11,43 @@
     using KspCalculator.Presets;
 
     /// <summary>
-    /// Interaction logic for PresetPartWindow.xaml
+    /// Interaction logic for PresetEngineWindow.xaml
     /// </summary>
-    public partial class PresetPartWindow : Window
+    public partial class PresetEngineWindow : Window
     {
-        PresetSelectionModel<PresetPart> m_dataContext;
+        PresetSelectionModel<PresetEngine> m_dataContext;
 
-        public PresetPartWindow()
+        public PresetEngineWindow()
         {
             InitializeComponent();
             InitializeDataContext();
         }
 
-        public PresetPart SelectedPart { get; private set; }
+        public PresetEngine SelectedEngine { get; private set; }
 
         void InitializeDataContext()
         {
             var presetConfig = PresetReader.GetPresets();
 
-            m_dataContext = new PresetSelectionModel<PresetPart>(presetConfig.Parts.OrderBy(x => x.Name));
+            m_dataContext = new PresetSelectionModel<PresetEngine>(presetConfig.Engines.OrderBy(x => x.Name));
             DataContext = m_dataContext;
         }
 
-        void AcceptPart(PresetPart presetPart)
+        void AcceptPart(PresetEngine presetEngine)
         {
-            if (presetPart != null)
+            if (presetEngine != null)
             {
-                SelectedPart = presetPart;
+                SelectedEngine = presetEngine;
                 DialogResult = true;
                 Close();
             }
         }
 
-        void gridPresetPart_RowDoubleClick(object sender, MouseButtonEventArgs e)
+        void gridPresetEngine_RowDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var row = sender as DataGridRow;
-            var presetPart = row?.Item as PresetPart;
-            AcceptPart(presetPart);
+            var presetEngine = row?.Item as PresetEngine;
+            AcceptPart(presetEngine);
         }
 
         void SearchboxEnterCommand_Executed(object sender, ExecutedRoutedEventArgs e)
@@ -55,8 +55,8 @@
             var view = m_dataContext.ItemView as ListCollectionView;
             if (view.Count == 1)
             {
-                var presetPart = ((IEnumerable)view).Cast<PresetPart>().First();
-                AcceptPart(presetPart);
+                var presetEngine = ((IEnumerable)view).Cast<PresetEngine>().First();
+                AcceptPart(presetEngine);
             }
         }
 

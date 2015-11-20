@@ -20,7 +20,7 @@
                     <DataGridTextColumn Binding="{Binding Path=MassDry, ValidatesOnExceptions=True}" Header="Dry mass (t)" />
                     <DataGridTextColumn Binding="{Binding Path=TotalMass, Mode=OneWay}" Header="Total mass (t)" IsReadOnly="True" />
                     <DataGridTextColumn Binding="{Binding Path=TotalMassDry, Mode=OneWay}" Header="Total dry mass (t)" IsReadOnly="True" />
-                    <DataGridTemplateColumn>
+                    <DataGridTemplateColumn CanUserResize="False" CanUserSort="False">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock>

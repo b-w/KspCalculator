@@ -59,6 +59,12 @@
     <Compile Include="Models\PartConfigurationModel.cs" />
     <Compile Include="Models\PresetSelectionModel.cs" />
     <Compile Include="Models\TwrComputationModel.cs" />
+    <Compile Include="PresetEngineOptionWindow.xaml.cs">
+      <DependentUpon>PresetEngineOptionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PresetEngineWindow.xaml.cs">
+      <DependentUpon>PresetEngineWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PresetPartWindow.xaml.cs">
       <DependentUpon>PresetPartWindow.xaml</DependentUpon>
     </Compile>
@@ -94,6 +100,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PresetEngineOptionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PresetEngineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PresetPartWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
