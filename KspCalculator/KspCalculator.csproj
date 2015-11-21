@@ -151,6 +151,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Libraries\KspMath.dll.bin" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -167,15 +168,18 @@
       <Name>KspMath</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\presets.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets. -->
   <Target Name="BeforeBuild" BeforeTargets="Build" Inputs="Resources\presets.xml" Outputs="Resources\presets.xml.bin">
     <Exec Command="$(SolutionDir)\Tools\gzipr.exe -c Resources\presets.xml Resources\presets.xml.bin" />
+  </Target>
+  <Target Name="BeforeBuild" BeforeTargets="Build" Inputs="..\KspMath\bin\Release\KspMath.dll" Outputs="Libraries\KspMath.dll.bin">
+    <Exec Command="$(SolutionDir)\Tools\gzipr.exe -c ..\KspMath\bin\Release\KspMath.dll Libraries\KspMath.dll.bin" />
   </Target>
   <!--
   <Target Name="AfterBuild">
