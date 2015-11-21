@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KspCalculator"
         xmlns:views="clr-namespace:KspCalculator.Views"
         mc:Ignorable="d"
-        Title="KSP Calculator" Height="480" Width="640">
+        Title="KSP Calculator" Height="480" Width="660">
     <DockPanel>
         <TabControl>
             <TabItem Header="Trust-to-Weight ratio">
