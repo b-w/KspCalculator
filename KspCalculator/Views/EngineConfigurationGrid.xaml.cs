@@ -40,8 +40,8 @@
                         trust = presetWindow.SelectedEngine.TrustAtm;
                         break;
                     case PresetEngineOptionWindow.EngineOption.Vac:
-                        isp = presetWindow.SelectedEngine.IspVacc;
-                        trust = presetWindow.SelectedEngine.TrustVacc;
+                        isp = presetWindow.SelectedEngine.IspVac;
+                        trust = presetWindow.SelectedEngine.TrustVac;
                         break;
                     default:
                         return;

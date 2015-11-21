@@ -4,14 +4,14 @@
 
     public class PresetEngine : PresetItem
     {
-        [XmlAttribute("TrustVacc")]
-        public double TrustVacc { get; set; }
+        [XmlAttribute("TrustVac")]
+        public double TrustVac { get; set; }
 
         [XmlAttribute("TrustAtm")]
         public double TrustAtm { get; set; }
 
-        [XmlAttribute("IspVacc")]
-        public double IspVacc { get; set; }
+        [XmlAttribute("IspVac")]
+        public double IspVac { get; set; }
 
         [XmlAttribute("IspAtm")]
         public double IspAtm { get; set; }

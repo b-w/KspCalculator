@@ -21,21 +21,26 @@
             </TextBox.InputBindings>
         </TextBox>
 
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
-            <DataGrid Name="gridPresetEngine" AutoGenerateColumns="False" CanUserReorderColumns="True" CanUserResizeRows="False" CanUserAddRows="False" CanUserDeleteRows="False" ItemsSource="{Binding Path=ItemView}">
-                <DataGrid.Resources>
-                    <Style TargetType="DataGridRow">
-                        <EventSetter Event="MouseDoubleClick" Handler="gridPresetEngine_RowDoubleClick" />
-                    </Style>
-                </DataGrid.Resources>
-                <DataGrid.Columns>
-                    <DataGridTextColumn Binding="{Binding Path=Name, Mode=OneTime}" Header="Name" Width="200" IsReadOnly="True" />
-                    <DataGridTextColumn Binding="{Binding Path=TrustVacc, Mode=OneTime}" Header="Vacc Trust (kN)" IsReadOnly="True" />
-                    <DataGridTextColumn Binding="{Binding Path=TrustAtm, Mode=OneTime}" Header="Atm Trust (kN)" IsReadOnly="True" />
-                    <DataGridTextColumn Binding="{Binding Path=IspVacc, Mode=OneTime}" Header="Vacc Isp (s)" IsReadOnly="True" />
-                    <DataGridTextColumn Binding="{Binding Path=IspAtm, Mode=OneTime}" Header="Atm Isp (s)" IsReadOnly="True" />
-                </DataGrid.Columns>
-            </DataGrid>
-        </ScrollViewer>
+        <DataGrid Name="gridPresetEngine"
+                  AutoGenerateColumns="False"
+                  CanUserReorderColumns="True"
+                  CanUserResizeRows="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  EnableRowVirtualization="True"
+                  ItemsSource="{Binding Path=ItemView, IsAsync=True}">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="gridPresetEngine_RowDoubleClick" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Name, Mode=OneTime}" Header="Name" Width="200" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=TrustVac, Mode=OneTime}" Header="Vac Trust (kN)" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=TrustAtm, Mode=OneTime}" Header="Atm Trust (kN)" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=IspVac, Mode=OneTime}" Header="Vac Isp (s)" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=IspAtm, Mode=OneTime}" Header="Atm Isp (s)" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
     </DockPanel>
 </Window>

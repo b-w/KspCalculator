@@ -64,5 +64,12 @@
         {
             e.CanExecute = !String.IsNullOrWhiteSpace(txtFilter.Text);
         }
+
+        void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            var viewer = (ScrollViewer)sender;
+            viewer.ScrollToVerticalOffset(viewer.VerticalOffset - e.Delta);
+            e.Handled = true;
+        }
     }
 }
