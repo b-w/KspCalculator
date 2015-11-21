@@ -20,5 +20,14 @@
             viewIspComputation.DataContext = new IspComputationModel();
             viewDvComputation.DataContext = new DvComputationModel();
         }
+
+        void AboutCommand_Executed(object sender, System.Windows.Input.ExecutedRoutedEventArgs e)
+        {
+            var aboutWindow = new AboutWindow()
+            {
+                Owner = this
+            };
+            aboutWindow.ShowDialog();
+        }
     }
 }

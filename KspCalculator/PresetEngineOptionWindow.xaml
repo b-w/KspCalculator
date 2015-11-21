@@ -23,10 +23,10 @@
     
     <DockPanel>
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Margin="10" Padding="3">
+            <Button Margin="10" Padding="3" Command="{StaticResource PressA}">
                 <TextBlock><Underline>A</Underline>tmospheric</TextBlock>
             </Button>
-            <Button Margin="10" Padding="3">
+            <Button Margin="10" Padding="3" Command="{StaticResource PressV}">
                 <TextBlock><Underline>V</Underline>acuum</TextBlock>
             </Button>
         </StackPanel>

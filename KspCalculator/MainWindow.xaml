@@ -6,8 +6,22 @@
         xmlns:local="clr-namespace:KspCalculator"
         xmlns:views="clr-namespace:KspCalculator.Views"
         mc:Ignorable="d"
-        Title="KSP Calculator" Height="480" Width="660">
+        Title="KSP Calculator" Height="600" Width="660" MinWidth="660" MinHeight="480">
+    <Window.Resources>
+        <RoutedUICommand x:Key="About" Text="About" />
+    </Window.Resources>
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource About}" Executed="AboutCommand_Executed" />
+    </Window.CommandBindings>
+    
     <DockPanel>
+        <DockPanel DockPanel.Dock="Top" Background="Black">
+            <Image DockPanel.Dock="Left" Source="Resources\ksp.jpg" Width="300" />
+            <Button DockPanel.Dock="Right" Height="20" Width="50" Margin="0 0 20 0" Command="{StaticResource About}">About</Button>
+            <TextBlock></TextBlock>
+        </DockPanel>
+        
         <TabControl>
             <TabItem Header="Trust-to-Weight ratio">
                 <views:TwrComputationView x:Name="viewTwrComputation" />
