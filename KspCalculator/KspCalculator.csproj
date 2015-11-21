@@ -156,6 +156,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <EmbeddedResource Include="Resources\presets.xml.bin" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -167,11 +168,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\presets.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
+       Other similar extension points exist, see Microsoft.Common.targets. -->
+  <Target Name="BeforeBuild" BeforeTargets="Build" Inputs="Resources\presets.xml" Outputs="Resources\presets.xml.bin">
+    <Exec Command="$(SolutionDir)\Tools\gzipr.exe -c Resources\presets.xml Resources\presets.xml.bin" />
   </Target>
+  <!--
   <Target Name="AfterBuild">
   </Target>
   -->

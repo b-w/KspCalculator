@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<Presets>
+	<Parts>
+		<!-- PODS -->
+		<Part Name="Mk1 Cockpit" MassTotal="1.28" MassDry="1.25" />
+		<Part Name="Mk1 Inline Cockpit" MassTotal="1.03" MassDry="1" />
+		<Part Name="Mk2 Cockpit" MassTotal="2.06" MassDry="2" />
+		<Part Name="Mk2 Inline Cockpit" MassTotal="2.1" MassDry="2" />
+		<Part Name="Mk3 Cockpit" MassTotal="3.90" MassDry="3.5" />
+		<Part Name="Mk1 Command Pod" MassTotal="0.84" MassDry="0.8" />
+		<Part Name="Mk1-2 Command Pod" MassTotal="4.12" MassDry="4" />
+		<Part Name="Mk1 Lander Can" MassTotal="0.66" MassDry="0.6" />
+		<Part Name="Mk2 Lander-can" MassTotal="2.66" MassDry="2.5" />
+		<Part Name="PPD-12 Cupola Module" MassTotal="1.8" MassDry="1.76" />
+		<Part Name="EAS-1 External Command Seat" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Probodobodyne RoveMate" MassTotal="0.15" MassDry="0.15" />
+		<Part Name="Probodobodyne QBE" MassTotal="0.07" MassDry="0.07" />
+		<Part Name="Probodobodyne HECS" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Probodobodyne OKTO" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Probodobodyne OKTO2" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="Stayputnik Mk. 1" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="RC-001S Remote Guidance Unit" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="RC-L01 Remote Guidance Unit" MassTotal="0.5" MassDry="0.5" />
+		<Part Name="Mk2 Drone Core" MassTotal="0.2" MassDry="0.2" />
+		
+		<!-- LIQUID FUEL TANKS -->
+		<Part Name="ROUND-8 Toroidal Fuel Tank" MassTotal="0.3375" MassDry="0.0375" />
+		<Part Name="Oscar-B Fuel Tank" MassTotal="0.225" MassDry="0.025" />
+		<Part Name="FL-T100 Fuel Tank" MassTotal="0.5625" MassDry="0.0625" />
+		<Part Name="FL-T200 Fuel Tank" MassTotal="1.125" MassDry="0.125" />
+		<Part Name="FL-T400 Fuel Tank" MassTotal="2.25" MassDry="0.25" />
+		<Part Name="FL-T800 Fuel Tank" MassTotal="4.5" MassDry="0.5" />
+		<Part Name="Rockomax X200-8 Fuel Tank" MassTotal="4.5" MassDry="0.5" />
+		<Part Name="Rockomax X200-16 Fuel Tank" MassTotal="9" MassDry="1" />
+		<Part Name="Rockomax X200-32 Fuel Tank" MassTotal="18" MassDry="2" />
+		<Part Name="Rockomax Jumbo-64 Fuel Tank" MassTotal="36" MassDry="4" />
+		<Part Name="LFB KR-1x2 &quot;Twin-Boar&quot; Liquid Fuel Engine" MassTotal="42" MassDry="10" />
+		<Part Name="Kerbodyne S3-3600 Tank" MassTotal="20.25" MassDry="2.25" />
+		<Part Name="Kerbodyne S3-7200 Tank" MassTotal="40.5" MassDry="4.5" />
+		<Part Name="Kerbodyne S3-14400 Tank" MassTotal="81" MassDry="9" />
+		<Part Name="Mk2 Rocket Fuel Fuselage Short" MassTotal="2.29" MassDry="0.29" />
+		<Part Name="Mk2 Rocket Fuel Fuselage" MassTotal="4.57" MassDry="0.57" />
+		<Part Name="Mk3 Rocket Fuel Fuselage Short" MassTotal="14.29" MassDry="1.79" />
+		<Part Name="Mk3 Rocket Fuel Fuselage" MassTotal="28.57" MassDry="3.57" />
+		<Part Name="Mk3 Rocket Fuel Fuselage Long" MassTotal="57.14" MassDry="7.14" />
+		<Part Name="C7 Brand Adapter - 2.5m to 1.25m" MassTotal="4.57" MassDry="0.57" />
+		<Part Name="C7 Brand Adapter Slanted - 2.5m to 1.25m" MassTotal="4.57" MassDry="0.57" />
+		<Part Name="Mk2 to 1.25m Adapter" MassTotal="2.29" MassDry="0.29" />
+		<Part Name="Mk2 to 1.25m Adapter Long" MassTotal="4.57" MassDry="0.57" />
+		<Part Name="Mk2 Bicoupler" MassTotal="2.29" MassDry="0.29" />
+		<Part Name="2.5m to Mk2 Adapter" MassTotal="4.57" MassDry="0.57" />
+		<Part Name="Mk3 to Mk2 Adapter" MassTotal="11.43" MassDry="1.43" />
+		<Part Name="Mk3 to 2.5m Adapter" MassTotal="14.29" MassDry="1.79" />
+		<Part Name="Mk3 to 2.5m Adapter Slanted" MassTotal="14.29" MassDry="1.79" />
+		<Part Name="Mk3 to 3.75m Adapter" MassTotal="14.29" MassDry="1.79" />
+		
+		<!-- LIQUID FUEL TANKS -->
+		<Part Name="Engine Nacelle" MassTotal="0.35" MassDry="0.15" />
+		<Part Name="Engine Pre-cooler" MassTotal="0.35" MassDry="0.15" />
+		<Part Name="Mk1 Liquid Fuel Fuselage" MassTotal="2.25" MassDry="0.25" />
+		<Part Name="Mk2 Liquid Fuel Fuselage Short" MassTotal="2.29" MassDry="0.29" />
+		<Part Name="Mk2 Liquid Fuel Fuselage" MassTotal="4.57" MassDry="0.57" />
+		<Part Name="Mk3 Liquid Fuel Fuselage Short" MassTotal="14.29" MassDry="1.79" />
+		<Part Name="Mk3 Liquid Fuel Fuselage" MassTotal="28.57" MassDry="3.57" />
+		<Part Name="Mk3 Liquid Fuel Fuselage Long" MassTotal="57.14" MassDry="7.14" />
+		<Part Name="NCS Adapter" MassTotal="0.5" MassDry="0.1" />
+		<Part Name="FAT-455 Aeroplane Main Wing" MassTotal="3.78" MassDry="0.78" />
+		<Part Name="Big-S Wing Strake" MassTotal="0.6" MassDry="0.1" />
+		<Part Name="Big-S Delta Wing" MassTotal="2.0" MassDry="0.5" />
+		
+		<!-- RCS FUEL TANKS -->
+		<Part Name="FL-R10 RCS Fuel Tank" MassTotal="0.37" MassDry="0.05" />
+		<Part Name="FL-R25 RCS Fuel Tank" MassTotal="1.15" MassDry="0.15" />
+		<Part Name="FL-R1 RCS Fuel Tank" MassTotal="3.4" MassDry="0.4" />
+		<Part Name="Mk2 Monopropellant Tank" MassTotal="1.89" MassDry="0.29" />
+		<Part Name="Mk3 Monopropellant Tank" MassTotal="4.71" MassDry="0.71" />
+		<Part Name="Stratus-V Roundified Monopropellant Tank" MassTotal="0.315" MassDry="0.075" />
+		<Part Name="Stratus-V Cylindrified Monopropellant Tank" MassTotal="0.75" MassDry="0.15" />
+		
+		<!-- XENON TANKS -->
+		<Part Name="PB-X50R Xenon Container" MassTotal="0.07" MassDry="0.03" />
+		<Part Name="PB-X150 Xenon Container" MassTotal="0.12" MassDry="0.05" />
+		<Part Name="PB-X750 Xenon Container" MassTotal="0.94" MassDry="0.41" />
+		
+		<!-- ORE TANKS -->
+		<Part Name="Small Holding Tank" MassTotal="3.5" MassDry="0.5" />
+		<Part Name="Large Holding Tank" MassTotal="17.0" MassDry="2.0" />
+		
+		<!-- FUEL TRANSFER -->
+		<Part Name="FTX-2 External Fuel Duct" MassTotal="0.05" MassDry="0.05" />
+		
+		<!-- LIQUID FUEL ENGINES -->
+		<Part Name="LV-1R &quot;Spider&quot; Liquid Fuel Engine" MassTotal="0.02" MassDry="0.02" />
+		<Part Name="24-77 &quot;Twitch&quot; Liquid Fuel Engine" MassTotal="0.09" MassDry="0.09" />
+		<Part Name="Mk-55 &quot;Thud&quot; Liquid Fuel Engine" MassTotal="0.9" MassDry="0.9" />
+		<Part Name="O-10 &quot;Puff&quot; MonoPropellant Fuel Engine" MassTotal="0.09" MassDry="0.09" />
+		<Part Name="LV-1 &quot;Ant&quot; Liquid Fuel Engine" MassTotal="0.02" MassDry="0.02" />
+		<Part Name="48-7S &quot;Spark&quot; Liquid Fuel Engine" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="LV-909 &quot;Terrier&quot; Liquid Fuel Engine" MassTotal="0.5" MassDry="0.5" />
+		<Part Name="LV-T30 &quot;Reliant&quot; Liquid Fuel Engine" MassTotal="1.25" MassDry="1.25" />
+		<Part Name="LV-T45 &quot;Swivel&quot; Liquid Fuel Engine" MassTotal="1.5" MassDry="1.5" />
+		<Part Name="S3 KS-25 &quot;Vector&quot; Liquid Fuel Engine" MassTotal="4.0" MassDry="4.0" />
+		<Part Name="CR-7 R.A.P.I.E.R. Engine" MassTotal="2.0" MassDry="2.0" />
+		<Part Name="T-1 Toroidal &quot;Aerospike&quot; Liquid Fuel Engine" MassTotal="1.0" MassDry="1.0" />
+		<Part Name="LV-N &quot;Nerv&quot; Atomic Rocket Motor" MassTotal="3.0" MassDry="3.0" />
+		<Part Name="Rockomax &quot;Poodle&quot; Liquid Engine" MassTotal="1.75" MassDry="1.75" />
+		<Part Name="Rockomax &quot;Skipper&quot; Liquid Engine" MassTotal="3" MassDry="3" />
+		<Part Name="Rockomax &quot;Mainsail&quot; Liquid Engine" MassTotal="6" MassDry="6" />
+		<Part Name="Kerbodyne KR-2L+ &quot;Rhino&quot; Liquid Fuel Engine" MassTotal="9.0" MassDry="9.0" />
+		<Part Name="S3 KS-25x4 &quot;Mammoth&quot; Liquid Fuel Engine" MassTotal="15.0" MassDry="15.0" />
+		
+		<!-- JET ENGINES -->
+		<Part Name="J-33 &quot;Wheesley&quot; Basic Jet Engine" MassTotal="1.5" MassDry="1.5" />
+		<Part Name="J-X4 &quot;Whiplash&quot; Turbo Ramjet Engine" MassTotal="1.8" MassDry="1.8" />
+		
+		<!-- SOLID FUEL BOOSTERS -->
+		<Part Name="RT-5 &quot;Flea&quot; Solid Fuel Booster" MassTotal="1.50" MassDry="0.45" />
+		<Part Name="RT-10 &quot;Hammer&quot; Solid Fuel Booster" MassTotal="3.56" MassDry="0.75" />
+		<Part Name="Rockomax BACC Solid Fuel Booster" MassTotal="7.65" MassDry="1.5" />
+		<Part Name="S1 SRB-KD25k" MassTotal="24.00" MassDry="4.5" />
+		<Part Name="Sepratron I" MassTotal="0.0725" MassDry="0.0125" />
+		<Part Name="Launch Escape System" MassTotal="1.1" MassDry="0.9" />
+		
+		<!-- ION ENGINES -->
+		<Part Name="IX-6315 &quot;Dawn&quot; Electric Propulsion System" MassTotal="0.25" MassDry="0.25" />
+		
+		<!-- SAS MODULES -->
+		<Part Name="CH-J3 Fly-By-Wire Avionics Hub" MassTotal="0.08" MassDry="0.08" />
+		
+		<!-- REACTION WHEELS -->
+		<Part Name="Small Inline Reaction Wheel" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Advanced Inline Stabilizer" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Advanced Reaction Wheel Module, Large" MassTotal="0.2" MassDry="0.2" />
+		
+		<!-- RCS TRUSTERS -->
+		<Part Name="RV-105 RCS Thruster Block" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Place-Anywhere 7 Linear RCS Port" MassTotal="0.03" MassDry="0.03" />
+		<Part Name="Vernor Engine" MassTotal="0.08" MassDry="0.08" />
+		
+		<!-- DECOUPLERS AND SEPARATORS -->
+		<Part Name="TT-38K Radial Decoupler" MassTotal="0.025" MassDry="0.025" />
+		<Part Name="TT-70 Radial Decoupler" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Hydraulic Detachment Manifold" MassTotal="0.4" MassDry="0.4" />
+		<Part Name="Structural Pylon" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="TR-2V Stack Decoupler" MassTotal="0.015" MassDry="0.015" />
+		<Part Name="TR-2C Stack Separator" MassTotal="0.02" MassDry="0.02" />
+		<Part Name="TR-18A Stack Decoupler" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="TR-18D Stack Separator" MassTotal="0.075" MassDry="0.075" />
+		<Part Name="Rockomax Brand Decoupler" MassTotal="0.4" MassDry="0.4" />
+		<Part Name="TR-XL Stack Separator" MassTotal="0.45" MassDry="0.45" />
+		<Part Name="TR-38-D" MassTotal="0.8" MassDry="0.8" />
+		
+		<!-- ADAPTERS, COUPLERS, AND STRUTS -->
+		<Part Name="FL-A10 Adapter" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Rockomax Brand Adapter" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Kerbodyne ADTP-2-3" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="FL-A5 Adapter" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="Rockomax Brand Adapter 02" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Small Hardpoint" MassTotal="0.02" MassDry="0.02" />
+		<Part Name="EAS-4 Strut Connector" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Cubic Octagonal Strut" MassTotal="0.001" MassDry="0.001" />
+		<Part Name="Octagonal Strut" MassTotal="0.001" MassDry="0.001" />
+		<Part Name="Modular Girder Adapter" MassTotal="0.25" MassDry="0.25" />
+		<Part Name="Modular Girder Segment" MassTotal="0.175" MassDry="0.175" />
+		<Part Name="Modular Girder Segment XL" MassTotal="0.375" MassDry="0.375" />
+		<Part Name="M-Beam 650 I-Beam" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="M-Beam 200 I-Beam" MassTotal="0.375" MassDry="0.375" />
+		<Part Name="M-Beam 200 I-Beam Pocket Edition" MassTotal="0.1875" MassDry="0.1875" />
+		<Part Name="The Not-Rockomax Micronode" MassTotal="0.15" MassDry="0.15" />
+		<Part Name="M-1x1 Structural Panel" MassTotal="0.075" MassDry="0.075" />
+		<Part Name="M-2x2 Structural Panel" MassTotal="0.3" MassDry="0.3" />
+		<Part Name="BZ-52 Radial Attachment Point" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="Rockomax HubMax Multi-Point Connector" MassTotal="1.500" MassDry="1.500" />
+		<Part Name="Structural Fuselage" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="TVR-200 Stack Bi-Coupler" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="TVR-1180C Mk1 Stack Tri-Coupler" MassTotal="0.15" MassDry="0.15" />
+		<Part Name="TVR-2160C Mk2 Stack Quad-Coupler" MassTotal="0.175" MassDry="0.175" />
+		<Part Name="TVR-200L Stack Bi-Adapter" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="TVR-300L Stack Tri-Adapter" MassTotal="0.15" MassDry="0.15" />
+		<Part Name="TVR-400L Stack Quad-Adapter" MassTotal="0.2" MassDry="0.2" />
+		
+		<!-- AIR INTAKES -->
+		<Part Name="Circular Intake" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Ram Air Intake" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Shock Cone Intake" MassTotal="0.025" MassDry="0.025" />
+		<Part Name="Mk1 Fuselage - Intake" MassTotal="0.12" MassDry="0.12" />
+		<Part Name="XM-G50 Radial Air Intake" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Structural Intake" MassTotal="0.008" MassDry="0.008" />
+		
+		<!-- NOSE CONES AND TAIL CONNECTORS -->
+		<Part Name="Small Nose Cone" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Aerodynamic Nose Cone" MassTotal="0.03" MassDry="0.03" />
+		<Part Name="Advanced Nose Cone - Type A" MassTotal="0.075" MassDry="0.075" />
+		<Part Name="Advanced Nose Cone - Type B" MassTotal="0.075" MassDry="0.075" />
+		<Part Name="Protective Rocket Nose Mk7" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Tail Connector A" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Tail Connector B" MassTotal="0.2" MassDry="0.2" />
+		
+		<!-- MODULAR WINGS -->
+		<Part Name="Wing Connector Type A" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Wing Connector Type B" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Wing Connector Type C" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Wing Connector Type D" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Wing Connector Type E" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Delta Wing" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Small Delta Wing" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Wing Strake" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Structural Wing Type A" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Structural Wing Type B" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Structural Wing Type C" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Structural Wing Type D" MassTotal="0.025" MassDry="0.025" />
+		<Part Name="Swept Wing Type A" MassTotal="0.113" MassDry="0.113" />
+		<Part Name="Swept Wing Type B" MassTotal="0.226" MassDry="0.226" />
+		
+		<!-- IRREGULAR WINGS -->
+		<Part Name="Basic Fin" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="AV-T1 Winglet" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="Tail Fin" MassTotal="0.13" MassDry="0.13" />
+		<Part Name="Swept Wings" MassTotal="0.275" MassDry="0.275" />
+		
+		<!-- CONTROL SURFACES -->
+		<Part Name="AV-R8 Winglet" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Standard Canard" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Advanced Canard" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Delta-Deluxe Winglet" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Tail Fin" MassTotal="0.125" MassDry="0.125" />
+		<Part Name="FAT-455 Aeroplane Tail Fin" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Big-S Spaceplane Tail Fin" MassTotal="0.45" MassDry="0.45" />
+		<Part Name="Elevon 1" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Elevon 2" MassTotal="0.06" MassDry="0.06" />
+		<Part Name="Elevon 3" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Elevon 4" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="Elevon 5" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Big-S Elevon 1" MassTotal="0.15" MassDry="0.15" />
+		<Part Name="Big-S Elevon 2" MassTotal="0.23" MassDry="0.23" />
+		<Part Name="FAT-445 Aeroplane Control Surface" MassTotal="0.17" MassDry="0.17" />
+		<Part Name="A.I.R.B.R.A.K.E.S" MassTotal="0.05" MassDry="0.05" />
+		
+		<!-- FAIRINGS -->
+		<Part Name="AE-FF1 Airstream Protective Shell (1.25m)" MassTotal="0.15" MassDry="0.15" />
+		<Part Name="AE-FF2 Airstream Protective Shell (2.5m)" MassTotal="0.35" MassDry="0.35" />
+		<Part Name="AE-FF3 Airstream Protective Shell (3.75m)" MassTotal="0.95" MassDry="0.95" />
+		
+		<!-- HEAT SHIELDS -->
+		<Part Name="Heat Shield (1.25m)" MassTotal="0.3" MassDry="0.3" />
+		<Part Name="Heat Shield (2.5m)" MassTotal="1.3" MassDry="1.3" />
+		<Part Name="Heat Shield (3.75m)" MassTotal="2.8" MassDry="2.8" />
+		
+		<!-- LANDING GEARS -->
+		<Part Name="LY-01 Fixed Landing Gear" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="LY05 Steerable Landing Gear" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="LY-10 Small Landing Gear" MassTotal="0.04" MassDry="0.04" />
+		<Part Name="LY-50 Medium Landing Gear" MassTotal="0.25" MassDry="0.25" />
+		<Part Name="LY-99 Large Landing Gear" MassTotal="0.6" MassDry="0.6" />
+		
+		<!-- LANDING LEGS -->
+		<Part Name="LT-1 Landing Struts" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="LT-2 Landing Strut" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="LT-5 Micro Landing Strut" MassTotal="0.015" MassDry="0.015" />
+		
+		<!-- PARACHUTES -->
+		<Part Name="Mk16 Parachute" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Mk16-XL Parachute" MassTotal="0.3" MassDry="0.3" />
+		<Part Name="Mk2-R Radial-Mount Parachute" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Mk25 Parachute" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Mk12-R Radial-Mount Drogue Chute" MassTotal="0.075" MassDry="0.075" />
+		
+		<!-- LADDERS -->
+		<Part Name="Pegasus I Mobility Enhancer" MassTotal="0.005" MassDry="0.005" />
+		<Part Name="Telus Mobility Enhancer" MassTotal="0.005" MassDry="0.005" />
+		<Part Name="Telus-LV Bay Mobility Enhancer" MassTotal="0.005" MassDry="0.005" />
+		
+		<!-- GENERATORS -->
+		<Part Name="Gigantor XL Solar Array" MassTotal="0.3" MassDry="0.3" />
+		<Part Name="OX-4W 2x3 Photovoltaic Panels" MassTotal="0.0175" MassDry="0.0175" />
+		<Part Name="OX-4L 1x6 Photovoltaic Panels" MassTotal="0.0175" MassDry="0.0175" />
+		<Part Name="SP-W 2x3 Photovoltaic Panels" MassTotal="0.025" MassDry="0.025" />
+		<Part Name="SP-L 1x6 Photovoltaic Panels" MassTotal="0.025" MassDry="0.025" />
+		<Part Name="OX-STAT Photovoltaic Panels" MassTotal="0.005" MassDry="0.005" />
+		<Part Name="PB-NUK Radioisotope Thermoelectric Generator" MassTotal="0.08" MassDry="0.08" />
+		<Part Name="Fuel Cell" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Fuel Cell Array" MassTotal="0.24" MassDry="0.24" />
+		
+		<!-- BATTERIES -->
+		<Part Name="Z-100 Rechargeable Battery Pack" MassTotal="0.005" MassDry="0.005" />
+		<Part Name="Z-200 Rechargeable Battery Bank" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Z-400 Rechargeable Battery" MassTotal="0.02" MassDry="0.02" />
+		<Part Name="Z-1k Rechargeable Battery Bank" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Z-4K Rechargeable Battery Bank" MassTotal="0.2" MassDry="0.2" />
+		
+		<!-- LIGHTS -->
+		<Part Name="Illuminator Mk1" MassTotal="0.015" MassDry="0.015" />
+		<Part Name="Illuminator Mk2" MassTotal="0.015" MassDry="0.015" />
+		
+		<!-- DOCKING -->
+		<Part Name="Clamp-O-Tron Jr." MassTotal="0.02" MassDry="0.02" />
+		<Part Name="Clamp-O-Tron Docking Port" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Clamp-O-Tron Shielded Docking Port" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Clamp-O-Tron Sr. Docking Port" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Inline Clamp-O-Tron" MassTotal="0.3" MassDry="0.3" />
+		<Part Name="Mk2 Clamp-O-Tron" MassTotal="0.6" MassDry="0.3" />
+		<Part Name="Advanced Grabbing Unit" MassTotal="0.075" MassDry="0.075" />
+		
+		<!-- HABITATION MODULE -->
+		<Part Name="PPD-10 Hitchhiker Storage Container" MassTotal="2.5" MassDry="2.5" />
+		<Part Name="Mk2 Crew Cabin" MassTotal="2.0" MassDry="2.0" />
+		<Part Name="Mk3 Passenger Module" MassTotal="6.5" MassDry="6.5" />
+		
+		<!-- CARGO AND SERVICE BAYS -->
+		<Part Name="Mk2 Cargo Bay CRG-04" MassTotal="0.25" MassDry="0.25" />
+		<Part Name="Mk2 Cargo Bay CRG-08" MassTotal="0.5" MassDry="0.5" />
+		<Part Name="Mk3 Cargo Bay CRG-25" MassTotal="1.5" MassDry="1.5" />
+		<Part Name="Mk3 Cargo Bay CRG-50" MassTotal="3.0" MassDry="3.0" />
+		<Part Name="Mk3 Cargo Bay CRG-100" MassTotal="6.0" MassDry="6.0" />
+		<Part Name="Service Bay (1.25m)" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Service Bay (2.5m)" MassTotal="0.3" MassDry="0.3" />
+		
+		<!-- ROVER WHEELS -->
+		<Part Name="RoveMax Model S2" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="RoveMax Model M1" MassTotal="0.075" MassDry="0.075" />
+		<Part Name="TR-2L Ruggedized Vehicular Wheel" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="RoveMax Model XL3" MassTotal="1.25" MassDry="1.25" />
+		
+		<!-- RESOURCE HARVESTERS -->
+		<Part Name="'Drill-O-Matic Junior' Mining Excavator" MassTotal="0.25" MassDry="0.25" />
+		<Part Name="'Drill-O-Matic' Mining Excavator" MassTotal="0.75" MassDry="0.75" />
+		
+		<!-- CONVERTERS -->
+		<Part Name="Convert-O-Tron 125" MassTotal="1.25" MassDry="1.25" />
+		<Part Name="ISRU Converter" MassTotal="4.25" MassDry="4.25" />
+		
+		<!-- RADIATORS -->
+		<Part Name="Radiator Panel (small)" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Radiator Panel (large)" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Thermal Control System (small)" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Thermal Control System (medium)" MassTotal="0.25" MassDry="0.25" />
+		<Part Name="Thermal Control System (large)" MassTotal="1.0" MassDry="1.0" />
+		
+		<!-- COMMUNICATIONS -->
+		<Part Name="Communotron 16" MassTotal="0.005" MassDry="0.005" />
+		<Part Name="Comms DTS-M1" MassTotal="0.03" MassDry="0.03" />
+		<Part Name="Communotron 88-88" MassTotal="0.025" MassDry="0.025" />
+		
+		<!-- LABS -->
+		<Part Name="Mobile Processing Lab MPL-LG-2" MassTotal="3.5" MassDry="3.5" />
+		
+		<!-- SENSORS -->
+		<Part Name="SC-9001 Science Jr" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="Mystery Goo™ Containment Unit" MassTotal="0.05" MassDry="0.05" />
+		<Part Name="Double-C Seismic Accelerometer" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="PresMat Barometer" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="GRAVMAX Negative Gravioli Detector" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="2HOT Thermometer" MassTotal="0.01" MassDry="0.01" />
+		<Part Name="Atmospheric Fluid Spectro-Variometer" MassTotal="0.01" MassDry="0.01" />
+		
+		<!-- RESOURCE SCANNERS -->
+		<Part Name="M700 Survey Scanner" MassTotal="0.2" MassDry="0.2" />
+		<Part Name="M4435 Narrow-Band Scanner" MassTotal="0.1" MassDry="0.1" />
+		<Part Name="Surface Scanning Module" MassTotal="0.01" MassDry="0.01" />
+	</Parts>
+	<Engines>
+		<!-- LIQUID FUEL ENGINES -->
+		<Engine Name="LV-1R &quot;Spider&quot; Liquid Fuel Engine" TrustVac="2.0" TrustAtm="1.793" IspVac="290" IspAtm="260" />
+		<Engine Name="24-77 &quot;Twitch&quot; Liquid Fuel Engine" TrustVac="16.0" TrustAtm="13.793" IspVac="290" IspAtm="250" />
+		<Engine Name="Mk-55 &quot;Thud&quot; Liquid Fuel Engine" TrustVac="120.0" TrustAtm="108.20" IspVac="305" IspAtm="275" />
+		<Engine Name="O-10 &quot;Puff&quot; MonoPropellant Fuel Engine" TrustVac="20.0" TrustAtm="9.6" IspVac="250" IspAtm="120" />
+		<Engine Name="LV-1 &quot;Ant&quot; Liquid Fuel Engine" TrustVac="2.0" TrustAtm="0.51" IspVac="315" IspAtm="80" />
+		<Engine Name="48-7S &quot;Spark&quot; Liquid Fuel Engine" TrustVac="18.0" TrustAtm="16.2" IspVac="300" IspAtm="270" />
+		<Engine Name="LV-909 &quot;Terrier&quot; Liquid Fuel Engine" TrustVac="60.0" TrustAtm="14.783" IspVac="345" IspAtm="85" />
+		<Engine Name="LV-T30 &quot;Reliant&quot; Liquid Fuel Engine" TrustVac="215.0" TrustAtm="200.67" IspVac="300" IspAtm="280" />
+		<Engine Name="LV-T45 &quot;Swivel&quot; Liquid Fuel Engine" TrustVac="200.0" TrustAtm="168.75" IspVac="320" IspAtm="270" />
+		<Engine Name="S3 KS-25 &quot;Vector&quot; Liquid Fuel Engine" TrustVac="1000" TrustAtm="936.5" IspVac="315" IspAtm="295" />
+		<Engine Name="CR-7 R.A.P.I.E.R. Engine" TrustVac="180.0" TrustAtm="162.30" IspVac="305" IspAtm="275" />
+		<Engine Name="T-1 Toroidal &quot;Aerospike&quot; Liquid Fuel Engine" TrustVac="180.0" TrustAtm="153.53" IspVac="340" IspAtm="290" />
+		<Engine Name="LV-N &quot;Nerv&quot; Atomic Rocket Motor" TrustVac="60.0" TrustAtm="13.875" IspVac="800" IspAtm="185" />
+		<Engine Name="Rockomax &quot;Poodle&quot; Liquid Engine" TrustVac="250.0" TrustAtm="64.29" IspVac="350" IspAtm="90" />
+		<Engine Name="Rockomax &quot;Skipper&quot; Liquid Engine" TrustVac="650.0" TrustAtm="568.75" IspVac="320" IspAtm="280" />
+		<Engine Name="Rockomax &quot;Mainsail&quot; Liquid Engine" TrustVac="1500" TrustAtm="1379.0" IspVac="310" IspAtm="285" />
+		<Engine Name="LFB KR-1x2 &quot;Twin-Boar&quot; Liquid Fuel Engine" TrustVac="2000" TrustAtm="1866.7" IspVac="300" IspAtm="280" />
+		<Engine Name="Kerbodyne KR-2L+ &quot;Rhino&quot; Liquid Fuel Engine" TrustVac="2000" TrustAtm="1500" IspVac="340" IspAtm="255" />
+		<Engine Name="S3 KS-25x4 &quot;Mammoth&quot; Liquid Fuel Engine" TrustVac="4000" TrustAtm="3746.0" IspVac="315" IspAtm="295" />
+		
+		<!-- JET ENGINES -->
+		<Engine Name="J-33 &quot;Wheesley&quot; Basic Jet Engine" TrustVac="0" TrustAtm="80" IspVac="0" IspAtm="9600" />
+		<Engine Name="J-X4 &quot;Whiplash&quot; Turbo Ramjet Engine" TrustVac="0" TrustAtm="130" IspVac="0" IspAtm="4000" />
+		<Engine Name="CR-7 R.A.P.I.E.R. Engine" TrustVac="0" TrustAtm="105" IspVac="0" IspAtm="3200" />
+		
+		<!-- SOLID FUEL BOOSTERS -->
+		<Engine Name="RT-5 &quot;Flea&quot; Solid Fuel Booster" TrustVac="192.0" TrustAtm="162.91" IspVac="165" IspAtm="140" />
+		<Engine Name="RT-10 &quot;Hammer&quot; Solid Fuel Booster" TrustVac="227.0" TrustAtm="197.90" IspVac="195" IspAtm="170" />
+		<Engine Name="Rockomax BACC Solid Fuel Booster" TrustVac="300.0" TrustAtm="250.0" IspVac="210" IspAtm="175" />
+		<Engine Name="S1 SRB-KD25k" TrustVac="670.0" TrustAtm="593.86" IspVac="220" IspAtm="195" />
+		<Engine Name="Sepratron I" TrustVac="112.47" TrustAtm="19.39" IspVac="154" IspAtm="118" />
+		<Engine Name="Launch Escape System" TrustVac="750.0" TrustAtm="666.667" IspVac="180" IspAtm="160" />
+		
+		<!-- ION ENGINES -->
+		<Engine Name="IX-6315 &quot;Dawn&quot; Electric Propulsion System" TrustVac="2.0" TrustAtm="0.048" IspVac="4200" IspAtm="100" />
+	</Engines>
+</Presets>
