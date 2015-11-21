@@ -35,11 +35,14 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DVStages\DvStagesComputation.cs" />
+    <Compile Include="DVStages\DvStagesParameters.cs" />
     <Compile Include="DV\DvComputation.cs" />
     <Compile Include="DV\DvParameters.cs" />
     <Compile Include="ISP\IspComputation.cs" />
     <Compile Include="ISP\IspParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StageConfiguration.cs" />
     <Compile Include="TWR\TwrComputation.cs" />
     <Compile Include="EngineConfiguration.cs" />
     <Compile Include="TWR\TwrParameters.cs" />

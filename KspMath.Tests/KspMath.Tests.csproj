@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DVStages\DvStagesComputationTests.cs" />
     <Compile Include="DV\DvComputationTests.cs" />
     <Compile Include="ISP\IspComputationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
