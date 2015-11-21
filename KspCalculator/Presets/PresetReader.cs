@@ -86,6 +86,11 @@
         {
             try
             {
+                if (File.Exists(PRESETFILE_NAME))
+                {
+                    return;
+                }
+
                 var assembly = Assembly.GetExecutingAssembly();
                 using (var rs = assembly.GetManifestResourceStream(RSRC_PRESETFILE))
                 using (var fo = File.OpenWrite(PRESETFILE_NAME))
