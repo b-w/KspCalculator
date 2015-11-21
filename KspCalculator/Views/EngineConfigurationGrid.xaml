@@ -19,7 +19,7 @@
                 <sys:String x:Key="preset">Preset</sys:String>
             </DataGrid.Resources>
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="200" />
+                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Engine name" Width="200" />
                 <DataGridTextColumn Binding="{Binding Path=EngineCount, ValidatesOnExceptions=True}" Header="# Engines" />
                 <DataGridTextColumn Binding="{Binding Path=EngineTrust, ValidatesOnExceptions=True}" Header="Trust (kN)" />
                 <DataGridTextColumn Binding="{Binding Path=EngineSpecificImpulse, ValidatesOnExceptions=True}" Header="Isp (s)" />

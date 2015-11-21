@@ -32,6 +32,9 @@
             <TabItem Header="Delta-V">
                 <views:DvComputationView x:Name="viewDvComputation" />
             </TabItem>
+            <TabItem Header="Multi-stage Delta-V">
+                <views:DvStagesComputationView x:Name="viewDvsComputation" />
+            </TabItem>
         </TabControl>
     </DockPanel>
 </Window>

@@ -19,7 +19,7 @@
                 <sys:String x:Key="preset">Preset</sys:String>
             </DataGrid.Resources>
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="200" />
+                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Part name" Width="200" />
                 <DataGridTextColumn Binding="{Binding Path=Count, ValidatesOnExceptions=True}" Header="# Parts" />
                 <DataGridTextColumn Binding="{Binding Path=Mass, ValidatesOnExceptions=True}" Header="Mass (t)" />
                 <DataGridTextColumn Binding="{Binding Path=MassDry, ValidatesOnExceptions=True}" Header="Dry mass (t)" />

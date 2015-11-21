@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="KspCalculator.Views.DvStagesComputationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KspCalculator.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Gravity (m/s^2):" Padding="20 5 5 5" />
+            <TextBox Width="60" Text="{Binding Path=Gravity}" />
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="0 0 0 10">
+            <Label Content="Total delta-V (m/s):" Padding="20 5 5 5" />
+            <TextBox Width="120" Text="{Binding Path=TotalDeltaV, Mode=OneWay}" IsReadOnly="True" />
+        </StackPanel>
+
+        <local:StageConfigurationGrid DataContext="{Binding Path=StageConfig}" Padding="10" />
+    </DockPanel>
+</UserControl>
